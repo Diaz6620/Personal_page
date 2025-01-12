@@ -13,14 +13,17 @@
     <header>
         <nav>
             <ul>
-                <li><a href="">Habilidades</a></li>
-                <li><a href="">Experiencia</a></li>
-                <li><a href="">Proyectos</a></li>
+                <li><a href="#home">Home</a></li>
+            </ul>
+            <ul>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <article class="landing-page">
+        <article class="landing-page" id="home">
             <img class="picture" src="./assets/Picture.webp" alt="Foto" />
             <div class="landing-information">
                 <h2>Jose Miguel Díaz</h2>
@@ -36,7 +39,7 @@
                 <img src="./assets/linkedin-svgrepo-com.svg" alt="Logo Linkedin" />
             </div>
         </article>
-        <article class="skills">
+        <article class="skills" id="skills">
             <h3>Habilidades:</h3>
             <div class="skills-container">
                 <section class="frontend-container">
@@ -106,7 +109,7 @@
                 </section>
             </div>
         </article>
-        <article class="projects">
+        <article class="projects" id="projects">
             <h3>Proyectos:</h3>
             <section class="project-card">
                 <div class="img-project-container">
@@ -129,14 +132,15 @@
                 </div>
             </section>
         </article>
-        <footer class="contact">
+        <footer class="contact" id="contact">
+            <h3>Contacto</h3>
             <form>
                 <label for="name-input">Tu nombre</label>
                 <input type="text" id="name-input" name="name" placeholder="Escribe tu nombre" required />
                 <label for="email-input">Tu correo</label>
                 <input type="email" id="email-input" name="email" placeholder="Escribe tu correo" required />
                 <label for="message-input">Tu mensaje</label>
-                <input type="text" id="message-input" name="message" placeholder="Escribe tu mensaje" required />
+                <textarea type="text" id="message-input" name="message" placeholder="Escribe tu mensaje" required></textarea>
                 <button type="submit">Enviar</button>
             </form>
         </footer>

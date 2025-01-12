@@ -2,23 +2,33 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: red;
+    background-color: #F4F4F9;
     max-width: 800px;
     margin: 0 auto;
     font-family: "Roboto", serif;
     overflow-x: hidden;
+    color: #333333;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width:800px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #3F72AF;
 }
 
 ul {
-    position: sticky;
     list-style: none;
     display: flex;
     justify-content: end;
     gap: 35px;
-    background-color: aliceblue;
     padding: 10px;
 }
 
@@ -26,11 +36,13 @@ li a {
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
+    background-color: #F2A900;
+    padding: 5px 30px;
+    border-radius: 50px;
 }
 
 .landing-page {
     height: 100vh;
-    background-color: aqua;
     display: flex;
     align-items: flex-start;
     gap: 25px;
@@ -74,7 +86,6 @@ h1 {
 /*--------------------------------------------*/
 
 .skills {
-    background-color: green;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -83,15 +94,22 @@ h1 {
     gap: 50px;
 }
 
+.skills h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .skills-container {
     display: flex;
-    gap: 80px;
+    gap: 50px;
 }
 
 .frontend-container, .backend-container, .tools-container {
-    border: 1px solid yellow;
+    border: 2px solid #F2A900;
+    border-radius: 10px;
     width: 200px;
     padding: 10px 20px 20px 20px;
+    font-weight: bold;
 }
 
 .skills-title {
@@ -116,12 +134,15 @@ figure {
 
 .projects {
     height: 100vh;
-    background-color: blue;
+    padding: 20px;
 }
 
 .projects h3 {
     text-align: center;
+    margin-top: 40px;
     margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .project-card {
@@ -129,7 +150,6 @@ figure {
     max-height: 50%;
     padding: 20px;
     display: flex;
-    background-color: aliceblue;
     gap: 20px;
 }
 
@@ -161,7 +181,8 @@ figure {
     border-radius: 50px;
     gap: 10px;
     font-weight: bold;
-    background-color: blue;
+    color: #333333;
+    background-color: #F2A900;
 }
 
 .project-btns img {
@@ -184,4 +205,56 @@ figure {
 .technologies-project-container img {
     width: 40px;
     margin-right: 20px;
+}
+
+/*------------------------------------------*/
+
+.contact {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 50px;
+}
+
+form {
+    padding: 20px;
+    width: 60%;
+    height: 60%;
+    border-radius: 10px;
+    border: 2px solid #F2A900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #3F72AF;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#message-input {
+    width: 80%;
+    height: 100px;
+    border-radius: 10px;
+    padding: 5px;
+    resize: none;
+}
+
+button {
+    padding: 10px 40px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #F2A900;
 }
